@@ -1,5 +1,6 @@
 import "./globals.css";
-import Header from "./components/header";
+import Nav from "./components/nav"
+import Footer from "./components/footer";
 
 export const metadata = {
   title: "ecomerse",
@@ -7,9 +8,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
-      <Header />
-      <body>{children}</body>
-    </>
+    <html lang="en">
+      <body>
+        <Nav/>
+        {children}
+        <Footer/>
+      </body>
+    </html>
   );
 }

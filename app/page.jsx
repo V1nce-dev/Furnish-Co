@@ -71,30 +71,36 @@ export default function Home() {
             </h1>
           </div>
         </div>
-       <div className="my-10 ">
-  {Room.map((image, index) => (
-    <div
-      key={index}
-      className="w-full h-[40rem] rounded shadow-lg overflow-hidden"
-    >
-      <div className="h-4/5">
-        <img
-          src={image.src}
-          alt={image.alt}
-          className="w-full h-full object-cover"
-        />
+        <div className="my-10 ">
+          {Room.map((image, index) => (
+            <div
+              key={index}
+              className="w-full h-[40rem] rounded shadow-lg overflow-hidden"
+            >
+              <div className="h-4/5">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <h1 className="text-xl font-bold">{image.title}</h1>
+                <h1 className=" text-3xl font-bold">
+                  Heres an example made from our design team.
+                </h1>
+                <p className="text-2xl font-thin">
+                  Join now and create your own custom design
+                </p>
+                <button className="w-28 h-10 ml-5 border drop-shadow-md rounded-lg bg-gray-200">
+                  Join Now!
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="flex p-5 justify-center">
-        <h2 className="text-xl font-bold">{image.title}</h2>
-        <p className=" text-3xl font-bold">Heres an example made from our design team.</p>
-        <button className="w-28 h-10 ml-5 border drop-shadow-md rounded-lg bg-gray-200">Start Here</button>
-      </div>
-    </div>
-  ))}
-</div>
- 
-      </div>
-      
+
       <div className="border-y border-b-gray-400 bg-[#707070] text-white">
         <h1 className="text-6xl font-semibold text-center p-10">
           Backed by the best.
@@ -118,3 +124,4 @@ export default function Home() {
     </main>
   );
 }
+

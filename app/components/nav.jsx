@@ -1,13 +1,28 @@
+"use client";
+import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa";
 
-export default function Header() {
+export default function Nav() {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
-    <div>
-      <nav className="fixed top-0 left-0 right-0 px-[10rem] py-5 z-10 bg-white drop-shadow-lg">
-        <div className="flex justify-between items-center">
+    <div className="overflow-hidden">
+      <nav className="fixed top-0 left-0 right-0 px-4 py-5 z-10 bg-white drop-shadow-lg overflow-x-hidden">
+        <div className="container mx-auto flex justify-between items-center">
           <div className="text-black font-bold flex items-center">
-            Furnish & Co
-            <span className="ml-10 text-sm text-gray-500">Shop</span>
+            <Link
+              href="/"
+              className="hover:underline"
+              onClick={handleScrollToTop}
+            >
+              Furnish & Co
+            </Link>
+            <span className="ml-10 text-sm text-gray-500">
+              <Link href="/shop" className="hover:underline">
+                Shop
+              </Link>
+            </span>
           </div>
           <div className="text-black font-bold flex items-center">
             <span className="mr-10">
@@ -18,13 +33,6 @@ export default function Header() {
           </div>
         </div>
       </nav>
-      <div className="mt-[5rem]">
-        <nav className="px-[10rem]">
-          <div className="bg-[#808080] py-3 flex justify-center rounded-lg">
-            <h1 className="text-white text-lg">Transform your home.</h1>
-          </div>
-        </nav>
-      </div>
     </div>
   );
 }

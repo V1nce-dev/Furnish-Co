@@ -1,5 +1,5 @@
 import "./globals.css";
-import Nav from "./components/nav"
+import Nav from "./components/nav";
 import Footer from "./components/footer";
 
 export const metadata = {
@@ -8,11 +8,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body>
-        <Nav/>
+        <Nav />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

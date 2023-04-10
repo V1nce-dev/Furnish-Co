@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { AiOutlineMail } from "react-icons/ai";
 
 export default function Footer() {
@@ -43,10 +43,10 @@ export default function Footer() {
           <p>
             Designed and developed by{" "}
             <a
-              href="https://github.com/Lilswan77"
+              href="https://github.com/V1nce-dev"
               className="text-blue-500 font-bold hover:text-white"
             >
-              Vince
+              Vince.dev
             </a>
             .
           </p>

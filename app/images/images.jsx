@@ -99,10 +99,26 @@ const Furniture = [
     name: "Table"
   },
   {
-    src: "https://cb2.scene7.com/is/image/CB2/CongoMediaCredenzaSHS16_1x1/$web_plp_card_mobile$/190905020726/congo-media-credenza.jpg",
+    src: "https://cdn.shopify.com/s/files/1/0617/5195/1601/collections/MD205-SMOK_1.jpg?v=1654319535",
     alt: "Media furniture",
     name: "Media Furniture"
   }
+];
+
+const design = [
+  {
+    src: "https://images.adsttc.com/media/images/5f75/0857/63c0/17bc/c900/096d/large_jpg/FLEXFORM_ASOLO_SECTIONAL.jpg?1601505319",
+    alt: "room1"
+  },
+  {
+    src: "https://www.roomes.co.uk/wp-content/uploads/florence-1.jpg",
+    alt: "room2"
+  },
+  {
+    src: "https://www.thespruce.com/thmb/Wb8gJqlCR66Ild5c3ySyEkhD7W0=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc()/living-room-decor-ideas-5442837-hero-8b6e540e13f9457a84fe9f9e26ea2e5c.jpg",
+    alt: "room3"
+  }
 ]
 
-export { ExampleImages, ProductImages, Room, Furniture };
+
+export { ExampleImages, ProductImages, Room, Furniture, design };

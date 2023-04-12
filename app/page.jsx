@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { ExampleImages, ProductImages, Room } from "./images/images";
 import { motion } from "framer-motion";
 import {
@@ -21,21 +22,25 @@ export default function Home() {
         <h1 className="text-3xl font-semibold mb-10">Featured Categories</h1>
         <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
           {ProductImages.map((image, index) => (
-            <div key={index} className="rounded shadow-lg overflow-hidden">
-              <div className="h-96">
-                <motion.img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3 }}
-                />
+            <Link key={index} href={`/shop/${image.category}/`} passHref>
+              <div className="rounded shadow-lg overflow-hidden">
+                <div className="h-96">
+                  <motion.img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                </div>
+                <div className="p-5">
+                  <h2 className="text-xl font-bold text-black">
+                    {image.title}
+                  </h2>
+                  <p className="text-black">{image.description}</p>
+                </div>
               </div>
-              <div className="p-5">
-                <h2 className="text-xl font-bold text-black">{image.title}</h2>
-                <p className="text-black">{image.description}</p>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
         <h1 className="text-3xl font-semibold my-10 ">

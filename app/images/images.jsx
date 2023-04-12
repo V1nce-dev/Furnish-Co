@@ -4,20 +4,24 @@ const ProductImages = [
     alt: "Sofas",
     title: "Sofas",
     description: "Discover our wide range of comfortable and stylish sofas.",
+    category: "sofas",
   },
   {
     src: "https://ak1.ostkcdn.com/images/products/is/images/direct/16054de95d38b7ec803338c0cc9e44ecc5f24ffc/Modern-Accent-Chair-Comfy-Upholstered-Armchair-for-Living-Room.jpg",
     alt: "Arm Chair",
     title: "Arm Chairs",
     description: "Explore our selection of armchairs to find your perfect fit.",
+    category: "armchair",
   },
   {
     src: "https://www.thespruce.com/thmb/WePPrkubiMQTsMEpCEA3LydmCEQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1266344083-48136451b8bf4ffcbba184ab0e06a39f.jpg",
     alt: "Tables",
     title: "Tables",
     description: "Browse our variety of tables for any room and purpose.",
+    category: "tables",
   },
 ];
+
 
 const ExampleImages = [
   {
@@ -121,4 +125,4 @@ const design = [
 ]
 
 
-export { ExampleImages, ProductImages, Room, Furniture, design };
+export { ExampleImages, ProductImages, Room, Furniture, design};

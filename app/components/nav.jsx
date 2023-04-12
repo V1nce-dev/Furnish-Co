@@ -19,7 +19,11 @@ export default function Nav() {
               Furnish & Co
             </Link>
             <span className="ml-10 text-sm text-gray-500">
-              <Link href="/shop" className="hover:underline">
+              <Link
+                href="/shop"
+                className="hover:underline"
+                onClick={handleScrollToTop}
+              >
                 Shop
               </Link>
             </span>

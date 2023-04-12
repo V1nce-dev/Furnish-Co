@@ -81,44 +81,43 @@ const Furniture = [
   {
     src: "https://media1.popsugar-assets.com/files/thumbor/j4_66sPlDzv3JFUDmQ0CxVlbotM/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2022/03/14/914/n/1922794/c83188ce622fac31a1c637.33801579_/i/best-modern-couches.jpg",
     alt: "Sofas",
-    name: "Sofas"
+    name: "Sofas",
   },
   {
     src: "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202302/0200/burton-upholstered-armchair-navy-c.jpg",
     alt: "Armchairs",
-    name: "Armchairs"
+    name: "Armchairs",
   },
   {
     src: "https://e7ekxd3vxwk.exactdn.com/wp-content/uploads/2018/09/Houston-Bed-Set.jpg?strip=all&lossy=1&ssl=1",
     alt: "Beds",
-    name: "Beds"
+    name: "Beds",
   },
   {
     src: "https://cdn.thewirecutter.com/wp-content/uploads/2020/01/diningtables-lowres-1383.jpg?auto=webp&quality=60&crop=1.91:1&width=1200",
     alt: "Table",
-    name: "Table"
+    name: "Table",
   },
   {
     src: "https://cdn.shopify.com/s/files/1/0617/5195/1601/collections/MD205-SMOK_1.jpg?v=1654319535",
     alt: "Media furniture",
-    name: "Media Furniture"
-  }
+    name: "Media Furniture",
+  },
 ];
 
 const design = [
   {
     src: "https://images.adsttc.com/media/images/5f75/0857/63c0/17bc/c900/096d/large_jpg/FLEXFORM_ASOLO_SECTIONAL.jpg?1601505319",
-    alt: "room1"
+    alt: "room1",
   },
   {
     src: "https://www.roomes.co.uk/wp-content/uploads/florence-1.jpg",
-    alt: "room2"
+    alt: "room2",
   },
   {
     src: "https://www.thespruce.com/thmb/Wb8gJqlCR66Ild5c3ySyEkhD7W0=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc()/living-room-decor-ideas-5442837-hero-8b6e540e13f9457a84fe9f9e26ea2e5c.jpg",
-    alt: "room3"
-  }
-]
-
+    alt: "room3",
+  },
+];
 
 export { ExampleImages, ProductImages, Room, Furniture, design };

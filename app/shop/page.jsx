@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Furniture } from "../images/images";
 import { design } from "../images/images";
 
@@ -52,17 +53,17 @@ export default function Shop() {
           </div>
         </div>
         <div className="mt-10 pt-5 rounded-lg bg-[#707070]">
-           <h1 className="text-center text-2xl font-thin pb-10 max-w-6xl mx-auto text-white">
+          <h1 className="text-center text-2xl font-thin pb-10 max-w-6xl mx-auto text-white">
             Your home is a reflection of you, and your furniture should be too.
             That's why we offer a wide range of unique pieces that will elevate
             your style and make your space feel like home. Whether you're
             looking for something modern, traditional, rustic, or eclectic, we
             have furniture that will complement your personal taste. From cozy
             sofas to functional storage solutions, we have everything you need
-            to make your space comfortable and inviting. 
+            to make your space comfortable and inviting.
           </h1>
-          </div>
-         </div>
+        </div>
+      </div>
     </main>
   );
 }

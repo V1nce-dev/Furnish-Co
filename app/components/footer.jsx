@@ -1,13 +1,13 @@
 "use client";
-import React from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
+import React from "react";
+import { AiOutlineMail } from "react-icons/ai";
 
 export default function Footer() {
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const sitemap = ['ABOUT', 'FAQs', 'CONTACT', 'COMPANY'];
+  const sitemap = ["ABOUT", "FAQs", "CONTACT", "COMPANY"];
 
   return (
     <footer className="bg-black text-white">
@@ -42,7 +42,7 @@ export default function Footer() {
         <hr className="my-8" />
         <div className="text-center text-sm">
           <p>
-            Designed and developed by{' '}
+            Designed and developed by{" "}
             <a
               href="https://github.com/V1nce-dev"
               className="text-blue-500 font-bold hover:text-white"

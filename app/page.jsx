@@ -70,7 +70,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="flex flex-col md:flex-row h-auto md:h-[30rem] my-10 rounded-lg overflow-hidden bg-gray-200">
+        <div className="flex flex-col md:flex-row h-auto md:h-[30rem] my-10 rounded-lg overflow-hidden shadow-lg bg-gray-200">
           <img
             src="https://www.ikea.com/ext/ingkadam/m/5f80ea30c7cfb44/original/PE843872-crop001.jpg?f=xl"
             alt="banner"

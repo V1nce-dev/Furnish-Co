@@ -9,7 +9,7 @@ const ProductImages = [
   {
     src: "https://ak1.ostkcdn.com/images/products/is/images/direct/16054de95d38b7ec803338c0cc9e44ecc5f24ffc/Modern-Accent-Chair-Comfy-Upholstered-Armchair-for-Living-Room.jpg",
     alt: "Arm Chair",
-    title: "Arm Chairs",
+    title: "ArmChairs",
     description: "Explore our selection of armchairs to find your perfect fit.",
     category: "armchair",
   },

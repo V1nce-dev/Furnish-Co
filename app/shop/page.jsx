@@ -35,7 +35,11 @@ export default function Shop() {
         <h1 className="text-3xl font-semibold text-center mb-10">Furniture</h1>
         <div className="rounded-lg bg-gray-300">
           <div className="grid sm:grid-cols-1 md:grid-cols-5 gap-4">
-            {Furniture.map(renderFurnitureItem)}
+            {Furniture.map((image, index) => (
+              <Link href={`/shop/${image.category}/`} passHref key={index}>
+                {renderFurnitureItem(image, index)}
+              </Link>
+            ))}
           </div>
         </div>
         <h1 className="text-3xl font-semibold my-10">

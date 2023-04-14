@@ -1,39 +1,39 @@
 const tableImage = [
   {
-    src: "https://www.ikea.com/us/en/images/products/glostad-loveseat-knisa-dark-gray__0950864_pe800736_s5.jpg?f=xl",
-    alt: "GLOSTAD",
-    name: "GLOSTAD",
-    price: "$149.99"
+    src: "https://www.ikea.com/us/en/images/products/ekedalen-extendable-table-dark-brown__0736963_pe740827_s5.jpg?f=s",
+    alt: "EKEDALEN",
+    name: "EKEDALEN",
+    price: "$199.99"
   },
   {
-    src: "https://www.ikea.com/us/en/images/products/kivik-sofa-tibbleby-beige-gray__1056144_pe848277_s5.jpg?f=xl",
-    alt: "KIVIK",
-    name: "KIVIK",
-    price: "$749.99"
+    src: "https://www.ikea.com/us/en/images/products/skogsta-dining-table-acacia__0546603_pe656255_s5.jpg?f=xl",
+    alt: "SKOGSTA",
+    name: "SKOGSTA",
+    price: "$549.99"
   },
   {
-    src: "https://www.ikea.com/us/en/images/products/friheten-sleeper-sectional-3-seat-w-storage-skiftebo-dark-gray__0175610_pe328883_s5.jpg?f=s",
-    alt: "FRIHETEN",
-    name: "FRIHETEN",
-    price: "$949.99"
+    src: "https://www.ikea.com/us/en/images/products/moerbylanga-table-oak-veneer-brown-stained__0737110_pe740888_s5.jpg?f=xl",
+    alt: "MÖRBYLÅNGA",
+    name: "MÖRBYLÅNGA",
+    price: "$999.99"
   },
   {
-    src: "https://www.ikea.com/us/en/images/products/paerup-sofa-vissle-gray__1041907_pe841187_s5.jpg?f=s",
-    alt: "PÄRUP",
-    name: "PÄRUP",
-    price: "$749.99"
+    src: "https://www.ikea.com/us/en/images/products/klimpfjaell-dining-table-gray-brown__0976445_pe813230_s5.jpg?f=xl",
+    alt: "KLIMPFJÄLL",
+    name: "KLIMPFJÄLL",
+    price: "$699.99"
   },
   {
-    src: "https://www.ikea.com/us/en/images/products/uppland-sofa-blekinge-white__0818565_pe774487_s5.jpg?f=s",
-    alt: "UPPLAND",
+    src: "https://www.ikea.com/us/en/images/products/nackanaes-table-acacia__1106462_pe868734_s5.jpg?f=xl",
+    alt: "NACKANÄS",
     name: "UPPLAND",
-    price: "$849.99"
+    price: "$299.99"
   },
   {
-    src: "https://www.ikea.com/us/en/images/products/linanaes-sofa-with-chaise-vissle-dark-gray__1013908_pe829460_s5.jpg?f=s",
-    alt: "LINANÄS",
-    name: "LINANÄS",
-    price: "$499.99"
+    src: "https://www.ikea.com/us/en/images/products/torsby-table-chrome-plated-black-marble-effect-ceramic__1026233_pe834398_s5.jpg?f=xl",
+    alt: "TORSBY",
+    name: "TORSBY",
+    price: "$449.99"
   },
 ]
 

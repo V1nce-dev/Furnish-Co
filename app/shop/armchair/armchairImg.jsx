@@ -1,39 +1,39 @@
 const armchairImage = [
   {
-    src: "https://www.ikea.com/us/en/images/products/glostad-loveseat-knisa-dark-gray__0950864_pe800736_s5.jpg?f=xl",
-    alt: "GLOSTAD",
-    name: "GLOSTAD",
-    price: "$149.99"
+    src: "https://www.ikea.com/us/en/images/products/ekeroe-armchair-skiftebo-yellow__0204753_pe359787_s5.jpg?f=s",
+    alt: "Ekeroe",
+    name: "Ekeroe",
+    price: "$259.99"
   },
   {
-    src: "https://www.ikea.com/us/en/images/products/kivik-sofa-tibbleby-beige-gray__1056144_pe848277_s5.jpg?f=xl",
-    alt: "KIVIK",
-    name: "KIVIK",
-    price: "$749.99"
+    src: "https://www.ikea.com/us/en/images/products/ekenaeset-armchair-kelinge-gray-turquoise__1109684_pe870150_s5.jpg?f=xl",
+    alt: "EKENÄSET",
+    name: "EKENÄSET",
+    price: "$279.99"
   },
   {
-    src: "https://www.ikea.com/us/en/images/products/friheten-sleeper-sectional-3-seat-w-storage-skiftebo-dark-gray__0175610_pe328883_s5.jpg?f=s",
-    alt: "FRIHETEN",
-    name: "FRIHETEN",
-    price: "$949.99"
+    src: "https://www.ikea.com/us/en/images/products/poaeng-armchair-brown-skiftebo-dark-gray__0937022_pe793528_s5.jpg?f=xl",
+    alt: "POÄNG",
+    name: "POÄNG",
+    price: "$119.99"
   },
   {
-    src: "https://www.ikea.com/us/en/images/products/paerup-sofa-vissle-gray__1041907_pe841187_s5.jpg?f=s",
-    alt: "PÄRUP",
-    name: "PÄRUP",
-    price: "$749.99"
-  },
-  {
-    src: "https://www.ikea.com/us/en/images/products/uppland-sofa-blekinge-white__0818565_pe774487_s5.jpg?f=s",
-    alt: "UPPLAND",
-    name: "UPPLAND",
-    price: "$849.99"
-  },
-  {
-    src: "https://www.ikea.com/us/en/images/products/linanaes-sofa-with-chaise-vissle-dark-gray__1013908_pe829460_s5.jpg?f=s",
-    alt: "LINANÄS",
-    name: "LINANÄS",
+    src: "https://www.ikea.com/us/en/images/products/flinshult-armchair-beige__1010600_pe828156_s5.jpg?f=xl",
+    alt: "FLINSHULT",
+    name: "FLINSHULT",
     price: "$499.99"
+  },
+  {
+    src: "https://www.ikea.com/us/en/images/products/ekolsund-recliner-gunnared-dark-gray__0709891_pe727153_s5.jpg?f=xl",
+    alt: "EKOLSUND",
+    name: "EKOLSUND",
+    price: "$429.99"
+  },
+  {
+    src: "https://www.ikea.com/us/en/images/products/oskarshamn-wing-chair-tibbleby-beige-gray__1118157_pe872954_s5.jpg?f=xl",
+    alt: "OSKARSHAMN",
+    name: "OSKARSHAMN",
+    price: "$399.99"
   },
 ]
 

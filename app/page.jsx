@@ -9,6 +9,10 @@ import {
 } from "react-icons/bs";
 
 export default function Home() {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <main>
       <div className="mt-[5rem]">
@@ -101,8 +105,11 @@ export default function Home() {
                 <p className="text-xl md:text-2xl font-thin">
                   Join now and create your own custom design
                 </p>
-                <button className="w-28 h-10 border drop-shadow-md rounded-lg bg-gray-200">
-                  Start Here
+                <button
+                  className="w-28 h-10 border drop-shadow-md rounded-lg bg-gray-200"
+                  onClick={handleScrollToTop}
+                >
+                  Start Now!
                 </button>
               </div>
             </div>
@@ -133,3 +140,4 @@ export default function Home() {
     </main>
   );
 }
+

@@ -25,10 +25,10 @@ const ProductImages = [
 
 const ExampleImages = [
   {
-    src: "https://www.ikea.com/us/en/images/products/uppland-sofa-with-chaise-hallarp-gray__0818579_pe774501_s5.jpg?f=s",
+    src: "https://www.ikea.com/us/en/images/products/kivik-sofa-tibbleby-beige-gray__1056144_pe848277_s5.jpg?f=xl",
     alt: "Uppland Sofa",
     name: "KIVIK",
-    price: "$1,099.99",
+    price: "$749.99",
   },
   {
     src: "https://www.ikea.com/us/en/images/products/rudsta-glass-door-cabinet-anthracite__0938997_pe794381_s5.jpg?f=s",
@@ -49,10 +49,10 @@ const ExampleImages = [
     price: "$229.99",
   },
   {
-    src: "https://www.ikea.com/us/en/images/products/danderyd-chair-white-vissle-gray__1114235_pe871692_s5.jpg?f=s",
-    alt: "DANDERYD",
-    name: "DANDERYD",
-    price: "$69.99",
+    src: "https://www.ikea.com/us/en/images/products/ekenaeset-armchair-kelinge-gray-turquoise__1109684_pe870150_s5.jpg?f=xl",
+    alt: "EKENÄSET",
+    name: "EKENÄSET",
+    price: "$279.99",
   },
   {
     src: "https://www.ikea.com/us/en/images/products/ekedalen-extendable-table-dark-brown__0736963_pe740827_s5.jpg?f=s",
@@ -64,7 +64,7 @@ const ExampleImages = [
     src: "https://www.ikea.com/us/en/images/products/aepplaryd-sofa-djuparp-dark-blue__0992903_pe820321_s5.jpg?f=s",
     alt: "ÄPPLARYD ",
     name: "ÄPPLARYD ",
-    price: "$1,349.00",
+    price: "$1,349.99",
   },
   {
     src: "https://www.ikea.com/us/en/images/products/byas-tv-unit-high-gloss-white__0644411_pe702653_s5.jpg?f=s",

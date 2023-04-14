@@ -19,7 +19,7 @@ export default function Sofas() {
         <img
           src={image.src}
           alt={image.alt}
-          className="w-full h-full object-contain border rounded-lg"
+          className="w-full h-full object-contain border rounded-lg shadow-md"
         />
         <div className=" overlay absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-lg"></div>
         <div className="absolute bottom-0 left-0 mb-5 ml-5 text-white font-bold bg-black bg-opacity-50 px-2 rounded">

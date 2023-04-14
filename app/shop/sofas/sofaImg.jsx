@@ -24,10 +24,10 @@ const sofaImage = [
     price: "$749.99"
   },
   {
-    src: "https://www.ikea.com/us/en/images/products/uppland-sofa-blekinge-white__0818565_pe774487_s5.jpg?f=s",
-    alt: "UPPLAND",
-    name: "UPPLAND",
-    price: "$849.99"
+    src: "https://www.ikea.com/us/en/images/products/aepplaryd-sofa-djuparp-dark-blue__0992903_pe820321_s5.jpg?f=s",
+    alt: "ÄPPLARY",
+    name: "ÄPPLARY",
+    price: "$1,349.99"
   },
   {
     src: "https://www.ikea.com/us/en/images/products/linanaes-sofa-with-chaise-vissle-dark-gray__1013908_pe829460_s5.jpg?f=s",

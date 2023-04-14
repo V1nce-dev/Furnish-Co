@@ -33,7 +33,7 @@ export default function Nav() {
               {" "}
               <FaShoppingCart />{" "}
             </span>
-            <h1 className="text-black">Sign in</h1>
+            <h1 className="text-black">Login</h1>
           </div>
         </div>
       </nav>

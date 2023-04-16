@@ -1,7 +1,7 @@
- "use client";
+"use client";
 import Link from "next/link.js";
 import { BiSearchAlt } from "react-icons/bi";
-import { bedImage } from "./bedImg.jsx";
+import { mediaImage } from "../../productImage/mediaImg.jsx";
 
 export default function Bed() {
   const handleSearchChange = (e) => {
@@ -13,7 +13,7 @@ export default function Bed() {
     console.log("Search submitted");
   };
 
-  const Beds = (image, index) => (
+  const Media = (image, index) => (
     <div key={index}>
       <div className="image-container relative group w-full h-80">
         <img
@@ -37,7 +37,7 @@ export default function Bed() {
     <span className="mx-2 hover:underline">Shop</span>
   </Link>
   <span>/</span>
-  <span className="mx-2">Beds</span>
+  <span className="mx-2">Media</span>
 </div>
 <div className="my-8 flex justify-center flex-col items-center"> 
   <h1 className="text-3xl font-bold mb-4"> 
@@ -60,10 +60,10 @@ export default function Bed() {
   </form>
 </div>
 <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mb-4">
-  {bedImage.map(Beds)}
+  {mediaImage.map(Media)}
 </div>
 
       </div>
     </div>
   );
-} 
+}

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link.js";
 import { BiSearchAlt } from "react-icons/bi";
-import { sofaImage } from "./sofaImg.jsx";
+import { tableImage } from "../../productImage/tableImg.jsx";
 
 export default function Sofas() {
   const handleSearchChange = (e) => {
@@ -13,7 +13,7 @@ export default function Sofas() {
     console.log("Search submitted");
   };
 
-  const Sofa = (image, index) => (
+  const Tables = (image, index) => (
     <div key={index}>
       <div className="image-container relative group w-full h-80">
         <img
@@ -37,7 +37,7 @@ export default function Sofas() {
     <span className="mx-2 hover:underline">Shop</span>
   </Link>
   <span>/</span>
-  <span className="mx-2">Sofas</span>
+  <span className="mx-2">Tables</span>
 </div>
 <div className="my-8 flex justify-center flex-col items-center"> 
   <h1 className="text-3xl font-bold mb-4"> 
@@ -49,7 +49,7 @@ export default function Sofas() {
     <input
       type="text"
       name="sofa-search"
-      placeholder="Search for sofas..."
+      placeholder="Search for tables..."
       className="lg:w-1/2 xl:w-full h-10 shadow-inner rounded-lg bg-gray-100 mx-auto outline-none pl-10 pr-5"
       onChange={handleSearchChange}
     />
@@ -60,7 +60,7 @@ export default function Sofas() {
   </form>
 </div>
 <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mb-4">
-  {sofaImage.map(Sofa)}
+  {tableImage.map(Tables)}
 </div>
 
       </div>

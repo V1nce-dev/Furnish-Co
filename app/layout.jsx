@@ -1,6 +1,6 @@
 import "./globals.css";
-import Nav from "./components/nav";
-import Footer from "./components/footer";
+import Nav from "./components/layout/nav.jsx";
+import Footer from "./components/layout/footer.jsx";
 
 export const metadata = {
   title: "ecomerse",

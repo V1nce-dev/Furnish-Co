@@ -26,7 +26,7 @@ export default function Home() {
         <h1 className="text-3xl font-semibold mb-10">Featured Categories</h1>
         <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
           {ProductImages.map((image, index) => (
-            <Link key={index} href={`/shop/${image.category}/`} passHref>
+            <Link key={index} href={`/shop/product/productPage/${image.category}/`} passHref>
               <div className="rounded shadow-lg overflow-hidden">
                 <div className="h-96">
                   <motion.img

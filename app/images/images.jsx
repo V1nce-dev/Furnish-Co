@@ -4,7 +4,7 @@ const ProductImages = [
     alt: "Sofas",
     title: "Sofas",
     description: "Discover our wide range of comfortable and stylish sofas.",
-    category: "sofas",
+    category: "sofa",
   },
   {
     src: "https://ak1.ostkcdn.com/images/products/is/images/direct/16054de95d38b7ec803338c0cc9e44ecc5f24ffc/Modern-Accent-Chair-Comfy-Upholstered-Armchair-for-Living-Room.jpg",
@@ -18,7 +18,7 @@ const ProductImages = [
     alt: "Tables",
     title: "Tables",
     description: "Browse our variety of tables for any room and purpose.",
-    category: "tables",
+    category: "table",
   },
 ];
 
@@ -86,7 +86,7 @@ const Furniture = [
     src: "https://media1.popsugar-assets.com/files/thumbor/j4_66sPlDzv3JFUDmQ0CxVlbotM/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2022/03/14/914/n/1922794/c83188ce622fac31a1c637.33801579_/i/best-modern-couches.jpg",
     alt: "Sofas",
     name: "Sofas",
-    category: "sofas",
+    category: "sofa",
 
   },
   {
@@ -99,13 +99,13 @@ const Furniture = [
     src: "https://e7ekxd3vxwk.exactdn.com/wp-content/uploads/2018/09/Houston-Bed-Set.jpg?strip=all&lossy=1&ssl=1",
     alt: "Beds",
     name: "Beds",
-    category: "beds"
+    category: "bed"
   },
   {
     src: "https://cdn.thewirecutter.com/wp-content/uploads/2020/01/diningtables-lowres-1383.jpg?auto=webp&quality=60&crop=1.91:1&width=1200",
     alt: "Table",
     name: "Table",
-    category: "tables"
+    category: "table"
   },
   {
     src: "https://cdn.shopify.com/s/files/1/0617/5195/1601/collections/MD205-SMOK_1.jpg?v=1654319535",

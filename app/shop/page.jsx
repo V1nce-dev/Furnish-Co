@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Furniture } from "../images/images";
-import { design } from "../images/images";
+import Furniture from "../images/furnitureImages.jsx";
+import design from "../images/designImages.jsx"
 
 export default function Shop() {
   const renderFurnitureItem = (image, index) => (

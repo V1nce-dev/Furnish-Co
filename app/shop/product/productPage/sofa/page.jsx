@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link.js";
 import { BiSearchAlt } from "react-icons/bi";
-import { sofaImage } from "../../productImage/sofaImg.jsx;
+import { sofaImage } from "../../productImage/sofaImg.jsx";
 
 export default function Sofas() {
   const handleSearchChange = (e) => {

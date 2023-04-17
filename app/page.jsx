@@ -1,12 +1,15 @@
 "use client";
 import Link from "next/link";
-import { ExampleImages, ProductImages, Room } from "./images/images";
+import ProductImages from "./images/productImages.jsx"
+import ExampleImages from "./images/exampleImages.jsx"
+import Room from "./images/roomImages.jsx" 
 import { motion } from "framer-motion";
 import {
   BsGlobeAmericas,
   BsFillHouseFill,
   BsFillPeopleFill,
 } from "react-icons/bs";
+
 
 export default function Home() {
   const handleScrollToTop = () => {

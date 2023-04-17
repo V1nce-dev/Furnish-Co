@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const armchairImage = [
   {
     id: 1,
@@ -50,25 +48,6 @@ const armchairImage = [
     price: "$399.99",
   },
 ];
+;
 
-const ProductImage = ({ slug }) => {
-  const product = armchairImage.find((item) => item.slug === slug);
-
-  if (!product) {
-    return <div>Image not found</div>;
-  }
-
-  return (
-    <div>
-      <Image
-        src={product.src}
-        alt={product.alt}
-        width={500}
-        height={500}
-        layout="responsive"
-      />
-    </div>
-  );
-};
-
-export { armchairImage,  ProductImage};
+export { armchairImage};

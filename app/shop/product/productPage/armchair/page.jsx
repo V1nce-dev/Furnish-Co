@@ -1,12 +1,12 @@
-"use client"
+"use client";
 import Link from "next/link.js";
 import { BiSearchAlt } from "react-icons/bi";
 import { armchairImage } from "../../productImage/armchairImg.jsx";
 
-const ArmChair = ({image, index}) => (
+const ArmChair = ({ image, index }) => (
   <div key={index}>
     <div className="image-container relative group w-full h-80">
-<Link href="/shop/[slug]/[id]" as={`/shop/armchair/${image.id}`}>
+    <Link href="/shop/product/productPage/[id]" as={`/shop/product/productPage/${image.id}`}>
         <img
           src={image.src}
           alt={image.alt}
@@ -54,9 +54,8 @@ const ArmchairPage = () => {
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mb-4">
           {armchairImage.map((image, index) => (
-  <ArmChair key={index} image={image} index={index} />
-))}
-
+            <ArmChair key={index} image={image} index={index} />
+          ))}
         </div>
       </div>
     </div>

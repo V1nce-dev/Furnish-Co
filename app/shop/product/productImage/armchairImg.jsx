@@ -50,4 +50,4 @@ const armchairImage = [
 ];
 ;
 
-export { armchairImage};
+export {armchairImage};

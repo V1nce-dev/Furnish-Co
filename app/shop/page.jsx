@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Furniture from "../images/furnitureImages.jsx";
-import design from "../images/designImages.jsx"
+import design from "../images/designImages.jsx";
 
 export default function Shop() {
   const renderFurnitureItem = (image, index) => (
@@ -36,7 +36,11 @@ export default function Shop() {
         <div className="rounded-lg bg-gray-300">
           <div className="grid sm:grid-cols-1 md:grid-cols-5 gap-4">
             {Furniture.map((image, index) => (
-              <Link href={`/shop/product/productPage/${image.category}/`} passHref key={index}>
+              <Link
+                href={`/shop/product/productPage/${image.category}/`}
+                passHref
+                key={index}
+              >
                 {renderFurnitureItem(image, index)}
               </Link>
             ))}

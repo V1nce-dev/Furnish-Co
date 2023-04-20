@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import ProductImages from "./images/productImages.jsx"
-import ExampleImages from "./images/exampleImages.jsx"
-import Room from "./images/roomImages.jsx" 
+import ProductImages from "./images/productImages.jsx";
+import ExampleImages from "./images/exampleImages.jsx";
+import Room from "./images/roomImages.jsx";
 import { motion } from "framer-motion";
 import {
   BsGlobeAmericas,
@@ -10,6 +10,72 @@ import {
   BsFillPeopleFill,
 } from "react-icons/bs";
 
+const ProductImage = ({ image, index }) => (
+  <Link key={index} href={`/shop/product/productPage/${image.category}/`}>
+    <div className="rounded shadow-lg overflow-hidden">
+      <div className="h-96">
+        <motion.img
+          src={image.src}
+          alt={image.alt}
+          className="w-full h-full object-cover"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+        />
+      </div>
+      <div className="p-5">
+        <h2 className="text-xl font-bold text-black">{image.title}</h2>
+        <p className="text-black">{image.description}</p>
+      </div>
+    </div>
+  </Link>
+);
+
+const ExampleImage = ({ image, index }) => (
+  <div key={index} className="grid-item">
+    <div className="image-container relative group w-full h-96 bg-white">
+      <Link href={`/shop/product/productPage/${image.id}`}>
+        <img
+          src={image.src}
+          alt={image.alt}
+          className="w-full h-full object-contain border rounded-lg shadow-md"
+        />
+        <div className="overlay absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-lg"></div>
+        <div className="absolute bottom-0 left-0 mb-5 ml-5 text-white font-bold bg-black bg-opacity-50 px-2 rounded">
+          <h1>{image.name}</h1>
+        </div>
+      </Link>
+    </div>
+  </div>
+);
+
+const RoomImage = ({ image, index, handleScrollToTop }) => (
+  <div
+    key={index}
+    className="w-full h-[40rem] rounded shadow-lg overflow-hidden"
+  >
+    <div className="h-4/5">
+      <img
+        src={image.src}
+        alt={image.alt}
+        className="w-full h-[30rem] md:h-full object-cover"
+      />
+    </div>
+    <div className="text-center">
+      <h1 className="text-2xl md:text-3xl font-bold">
+        Here's an example made from our design team.
+      </h1>
+      <p className="text-xl md:text-2xl font-thin">
+        Join now and create your own custom design
+      </p>
+      <button
+        className="w-28 h-10 border drop-shadow-md rounded-lg bg-gray-200"
+        onClick={handleScrollToTop}
+      >
+        Start Now!
+      </button>
+    </div>
+  </div>
+);
 
 export default function Home() {
   const handleScrollToTop = () => {
@@ -29,25 +95,7 @@ export default function Home() {
         <h1 className="text-3xl font-semibold mb-10">Featured Categories</h1>
         <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
           {ProductImages.map((image, index) => (
-            <Link key={index} href={`/shop/product/productPage/${image.category}/`} passHref>
-              <div className="rounded shadow-lg overflow-hidden">
-                <div className="h-96">
-                  <motion.img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover"
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </div>
-                <div className="p-5">
-                  <h2 className="text-xl font-bold text-black">
-                    {image.title}
-                  </h2>
-                  <p className="text-black">{image.description}</p>
-                </div>
-              </div>
-            </Link>
+            <ProductImage key={index} image={image} />
           ))}
         </div>
         <h1 className="text-3xl font-semibold my-10 ">
@@ -56,24 +104,7 @@ export default function Home() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
           {ExampleImages.map((image, index) => (
-            <motion.div
-              key={index}
-              className="rounded overflow-hidden shadow-lg border-t"
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="h-64">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="p-5 bg-gray-200">
-                <h2 className="text-xl font-bold">{image.name}</h2>
-                <p className="text-black">{image.price}</p>
-              </div>
-            </motion.div>
+            <ExampleImage key={index} image={image} />
           ))}
         </div>
 
@@ -90,32 +121,11 @@ export default function Home() {
 
         <div className="my-10">
           {Room.map((image, index) => (
-            <div
+            <RoomImage
               key={index}
-              className="w-full h-[40rem] rounded shadow-lg overflow-hidden"
-            >
-              <div className="h-4/5">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-[30rem] md:h-full object-cover"
-                />
-              </div>
-              <div className="text-center">
-                <h1 className="text-2xl md:text-3xl font-bold">
-                  Heres an example made from our design team.
-                </h1>
-                <p className="text-xl md:text-2xl font-thin">
-                  Join now and create your own custom design
-                </p>
-                <button
-                  className="w-28 h-10 border drop-shadow-md rounded-lg bg-gray-200"
-                  onClick={handleScrollToTop}
-                >
-                  Start Now!
-                </button>
-              </div>
-            </div>
+              image={image}
+              handleScrollToTop={handleScrollToTop}
+            />
           ))}
         </div>
       </div>
@@ -143,4 +153,3 @@ export default function Home() {
     </main>
   );
 }
-

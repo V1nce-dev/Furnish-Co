@@ -13,7 +13,7 @@ const Furniture = [
     category: "armchair" 
   },
   {
-    src: "https://e7ekxd3vxwk.exactdn.com/wp-content/uploads/2018/09/Houston-Bed-Set.jpg?strip=all&lossy=1&ssl=1",
+    src: "https://www.ikea.com/us/en/images/products/hemnes-bed-frame-black-brown-luroey__1101517_pe866696_s5.jpg?f=s",
     alt: "Beds",
     name: "Beds",
     category: "bed"

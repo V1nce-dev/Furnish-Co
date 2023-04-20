@@ -1,8 +1,9 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { FaShoppingCart } from "react-icons/fa";
 import LoginPage from "./login.jsx";
+import CartPage from "./cart.jsx";
+import { FaShoppingCart } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Nav() {
@@ -13,10 +14,16 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef(null);
 
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const cartRef = useRef(null);
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
         setIsOpen(false);
+      }
+      if (cartRef.current && !cartRef.current.contains(event.target)) {
+        setIsCartOpen(false);
       }
     };
 
@@ -30,7 +37,16 @@ export default function Nav() {
     setIsOpen(!isOpen);
   };
 
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
+  };
+
   const sidebarVariants = {
+    open: { width: "20rem" },
+    closed: { width: 0 },
+  };
+
+  const cartVariants = {
     open: { width: "20rem" },
     closed: { width: 0 },
   };
@@ -50,7 +66,7 @@ export default function Nav() {
             </span>
           </div>
           <div className="text-black font-bold flex items-center">
-            <span className="mr-10">
+            <span className="mr-10 cursor-pointer" onClick={toggleCart}>
               <FaShoppingCart />
             </span>
             <button
@@ -71,12 +87,26 @@ export default function Nav() {
       >
         <LoginPage />
       </motion.div>
+      <motion.div
+        ref={cartRef}
+        className="fixed right-0 top-0 h-full z-20 bg-white transition-all duration-300"
+        initial={false}
+        animate={isCartOpen ? "open" : "closed"}
+        variants={cartVariants}
+      >
+        <CartPage />
+      </motion.div>
       <div
         className={`fixed inset-0 z-10 bg-black transition-opacity duration-300 ${
-          isOpen ? "opacity-50" : "opacity-0 pointer-events-none"
+          isOpen || isCartOpen ? "opacity-50" : "opacity-0 pointer-events-none"
         }`}
-        onClick={toggleSidebar}
+        onClick={(e) => {
+          e.preventDefault();
+          setIsOpen(false);
+          setIsCartOpen(false);
+        }}
       ></div>
     </div>
   );
 }
+``;

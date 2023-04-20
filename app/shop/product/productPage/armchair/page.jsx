@@ -6,7 +6,10 @@ import { armchairImage } from "../../productImage/armchairImg.jsx";
 const ArmChair = ({ image, index }) => (
   <div key={index}>
     <div className="image-container relative group w-full h-80">
-    <Link href="/shop/product/productPage/[id]" as={`/shop/product/productPage/${image.id}`}>
+      <Link
+        href="/shop/product/productPage/[id]"
+        as={`/shop/product/productPage/${image.id}`}
+      >
         <img
           src={image.src}
           alt={image.alt}

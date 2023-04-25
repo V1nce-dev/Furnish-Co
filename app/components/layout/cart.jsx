@@ -1,5 +1,8 @@
-export default function Cart() {
-  return (
+import cartContext from "../cartContext.jsx"
+
+export default function addToCart() {
+  <cartContext/>
+ return (
     <div className="px-4 py-2 rounded-md">
       <h2 className="text-lg font-medium mb-2">Your Cart</h2>
       <ul className="divide-y divide-gray-200">
@@ -15,9 +18,7 @@ export default function Cart() {
               <p className="text-gray-500 text-xs">Price: $9.99</p>
             </div>
           </div>
-          <button className="text-red-500 hover:text-red-700">
-            Remove
-          </button>
+          <button className="text-red-500 hover:text-red-700">Remove</button>
         </li>
         <li className="py-2 flex items-center justify-between">
           <div className="flex items-center">
@@ -31,9 +32,7 @@ export default function Cart() {
               <p className="text-gray-500 text-xs">Price: $19.99</p>
             </div>
           </div>
-          <button className="text-red-500 hover:text-red-700">
-            Remove
-          </button>
+          <button className="text-red-500 hover:text-red-700">Remove</button>
         </li>
       </ul>
       <div className="mt-4 flex justify-between">
@@ -45,5 +44,5 @@ export default function Cart() {
       </button>
     </div>
   );
-
 }
+

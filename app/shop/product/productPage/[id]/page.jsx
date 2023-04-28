@@ -1,10 +1,9 @@
-"use client"
+"use client";
 import { sofaImage } from "../../productImage/sofaImg.jsx";
 import { armchairImage } from "../../productImage/armchairImg.jsx";
 import { bedImage } from "../../productImage/bedImg.jsx";
 import { tableImage } from "../../productImage/tableImg.jsx";
 import { mediaImage } from "../../productImage/mediaImg.jsx";
-import  addToCart  from "../../../../components/cartContext.jsx"; // Update the import path accordingly
 
 function App({ params }) {
   const allImages = [
@@ -17,11 +16,6 @@ function App({ params }) {
   const chosenIndex = params.id - 1;
   const isIndexValid = chosenIndex >= 0 && chosenIndex < allImages.length;
   const chosenProduct = isIndexValid ? allImages[chosenIndex] : null;
-  const chosenProductImageSrc = chosenProduct ? chosenProduct.src : "";
-
-  function handleClick() {
-      addToCart();
-  }
 
   return (
     <div className="mt-20">
@@ -30,7 +24,7 @@ function App({ params }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <img
               className="w-full h-full object-cover rounded-md shadow-md"
-              src={chosenProductImageSrc}
+              src={chosenProduct.src}
               alt={`Product ${chosenIndex}`}
             />
             <div>
@@ -45,7 +39,6 @@ function App({ params }) {
               </p>
               <button
                 className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300"
-                onClick={handleClick}
               >
                 Add to Cart
               </button>
@@ -62,4 +55,3 @@ function App({ params }) {
 }
 
 export default App;
-

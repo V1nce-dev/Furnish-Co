@@ -1,4 +1,4 @@
-const armchairImage = [
+export const armchairImage = [
   {
     src: "https://www.ikea.com/us/en/images/products/ekeroe-armchair-skiftebo-yellow__0204753_pe359787_s5.jpg?f=s",
     alt: "Ekeroe",
@@ -44,4 +44,3 @@ const armchairImage = [
 ];
 ;
 
-export {armchairImage};

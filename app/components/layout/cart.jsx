@@ -1,7 +1,4 @@
-import cartContext from "../cartContext.jsx"
-
 export default function addToCart() {
-  <cartContext/>
  return (
     <div className="px-4 py-2 rounded-md">
       <h2 className="text-lg font-medium mb-2">Your Cart</h2>
@@ -45,4 +42,3 @@ export default function addToCart() {
     </div>
   );
 }
-
